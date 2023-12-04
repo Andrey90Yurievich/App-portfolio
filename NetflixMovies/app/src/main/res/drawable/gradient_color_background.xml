@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- ресурс фон для элемента активности <layer-list  - список слоев, комбинация слоев-->
+    <item>
+    <!--<item> — элемент, определяющий пункт меню-->
+    <shape>
+        <!--простые геометрические фигуры, указывая их размеры,
+         фон и контур с помощью тега <shape>.
+          <shape> - пер. форма, который в свою очередь может содержать
+          дочерние элементы <corners>, <gradient>, <padding>,
+           <size>, <solid>, <stroke>.-->
+        <gradient android:startColor="#997c3660"
+            android:centerColor="#19191b"
+            android:endColor="#19191b"
+            android:type="radial"
+            android:gradientRadius="110%"
+            android:centerX="0.2"
+            android:centerY="0.2"/>
+        <!--<gradient> - задаёт градиентную заливку для фигуры.
+        Возможные атрибуты: android:angle, android:centerX,
+         android:centerY, android:centerColor, android:endColor,
+          android:gradientRadius, android:startColor,
+           android:type, android:useLevel
+           Рисует развёрточный градиент с помощью перехода
+           между цветами startColor
+            android:type="linear" можно опустить, он так и есть по умолчанию.
+            Отображает прямой переход от цвета startColor к
+            цвету endColor под углом, заданным в атрибуте angle.
+Атрибут android:angle используется только линейным градиентом
+и должен быть кратным значению 45.-->
+    </shape>
+</item>
+    <item>
+        <shape>
+            <gradient android:startColor="#800f8a75"
+                android:centerColor="@android:color/transparent"
+                android:endColor="@android:color/transparent"
+                android:gradientRadius="110%"
+                android:centerX="0.8"
+                android:centerY="0.6"
+                android:type="radial"/>
+        </shape>
+    </item>
+</layer-list>
