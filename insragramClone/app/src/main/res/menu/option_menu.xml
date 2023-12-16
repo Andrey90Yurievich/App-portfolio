@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/heart"
+        android:title="like"
+        app:showAsAction="always"/>
+    <!-- начение never означает, что элемент меню не должен
+    выводиться в заголовке, а только в всплывающем меню,
+    т.е. находиться за тремя точками. Если вы установите
+     значение always, то пункт Settings сразу появится в
+      заголовке вашего приложения.  -->
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/send"
+        android:title="message"
+        app:showAsAction="always"/>
+</menu>
