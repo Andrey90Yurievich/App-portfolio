@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5D0D0"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/backgroundbutton"
+        android:text="Схранить"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="250dp"
+
+        android:layout_height="57dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/backgroundedit"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:text="Название"
+        app:layout_constraintBottom_toTopOf="@+id/edPrice"
+        app:layout_constraintEnd_toEndOf="@+id/edPrice"
+        app:layout_constraintStart_toStartOf="@+id/edPrice" />
+
+    <EditText
+        android:id="@+id/edPrice"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/backgroundedit"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:text="Цена"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/tvList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/backgroundedit"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/edName"
+        app:layout_constraintEnd_toEndOf="@+id/edName"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
